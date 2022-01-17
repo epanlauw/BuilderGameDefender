@@ -22,8 +22,6 @@ public class ResourceManager : MonoBehaviour
         {
             resourceAmountDictionary[resourceType] = 0;
         }
-
-        TestLogResourceAmountDictionary();
     }
 
     private void Update()
@@ -32,15 +30,6 @@ public class ResourceManager : MonoBehaviour
         {
             ResourceTypeListSO resourceTypeList = Resources.Load<ResourceTypeListSO>("ScriptableObjects/" + typeof(ResourceTypeListSO).Name);
             AddResource(resourceTypeList.list[0], 2);
-            TestLogResourceAmountDictionary();
-        }
-    }
-
-    private void TestLogResourceAmountDictionary()
-    {
-        foreach (ResourceTypeSO resourceType in resourceAmountDictionary.Keys)
-        {
-            Debug.Log(resourceType.nameString + ": " + resourceAmountDictionary[resourceType]);
         }
     }
 
@@ -49,8 +38,6 @@ public class ResourceManager : MonoBehaviour
         resourceAmountDictionary[resourceType] += amount;
 
         OnResourceAmountChanged?.Invoke(this, EventArgs.Empty);
-
-        TestLogResourceAmountDictionary();
     }
 
     public int GetResourceAmount(ResourceTypeSO resourceType)

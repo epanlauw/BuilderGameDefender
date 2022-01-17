@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5899115331348641202}
-  - component: {fileID: -1704335707568555861}
-  - component: {fileID: -7471927297058950627}
+  - component: {fileID: 1683866986707943911}
+  - component: {fileID: 8079015705337642483}
   m_Layer: 0
-  m_Name: pfStoneHarvester
+  m_Name: pfWoodHarvester
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-1704335707568555861
+--- !u!114 &1683866986707943911
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef2046a2319d11c4e9282096562a7afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-7471927297058950627
+--- !u!114 &8079015705337642483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bcad159cf6ded948958b1784cae73bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingType: {fileID: 11400000, guid: 44680182f2cb657438d0fd5b85086bb6, type: 2}
+  buildingType: {fileID: 11400000, guid: 341861e050914304ebde7ecdce005521, type: 2}
 --- !u!1 &9168664101637357708
 GameObject:
   m_ObjectHideFlags: 0
@@ -68,6 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 390525874992966924}
   - component: {fileID: 4915980752211609241}
+  - component: {fileID: 1229476296986083335}
   m_Layer: 0
   m_Name: sprite
   m_TagString: Untagged
@@ -129,7 +130,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2263e91ebcd2a254dab5f4caccb4a7af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 793ca27a5a3378149aaa12abe85933f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -140,3 +141,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1229476296986083335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9168664101637357708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89db8e6927bc12441b405e3053da458a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runOnce: 1
+  positionOffsetY: 0
