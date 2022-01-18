@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5899115331348641202}
   - component: {fileID: 1683866986707943911}
   - component: {fileID: 8079015705337642483}
-  - component: {fileID: 233833331097314191}
+  - component: {fileID: 3806456607913538570}
   m_Layer: 0
-  m_Name: pfGoldHarvester
+  m_Name: pfHQ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,8 +58,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bcad159cf6ded948958b1784cae73bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingType: {fileID: 11400000, guid: bf7820a00a293fc4da9b29137dcc1ff9, type: 2}
---- !u!61 &233833331097314191
+  buildingType: {fileID: 11400000, guid: 013f928feef66364887d209194fbf973, type: 2}
+--- !u!61 &3806456607913538570
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,7 +72,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09337652, y: -0.1750803}
+  m_Offset: {x: -0.0218997, y: -0.5018312}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -83,7 +83,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.2290697, y: 4.2915125}
+  m_Size: {x: 6.3720236, y: 4.0872936}
   m_EdgeRadius: 0
 --- !u!1 &9168664101637357708
 GameObject:
@@ -95,7 +95,7 @@ GameObject:
   m_Component:
   - component: {fileID: 390525874992966924}
   - component: {fileID: 4915980752211609241}
-  - component: {fileID: 5316174145793110511}
+  - component: {fileID: 1229476296986083335}
   m_Layer: 0
   m_Name: sprite
   m_TagString: Untagged
@@ -157,7 +157,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8ead931dd91bff8489e75de9c414f17f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7030b8e3eb49e8440ae8eb3ec8b45d05, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -168,7 +168,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5316174145793110511
+--- !u!114 &1229476296986083335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
