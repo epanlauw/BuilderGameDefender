@@ -8022,6 +8022,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c8abddcc4fae42499aba2e1653d2d3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingResourceAmountList:
+  - resourceType: {fileID: 11400000, guid: 02e912c92dd97cd429c8ad1bd14584cc, type: 2}
+    amount: 100
+  - resourceType: {fileID: 11400000, guid: 722a35620851d01469c64798afdcb6fc, type: 2}
+    amount: 100
+  - resourceType: {fileID: 11400000, guid: abd507862ce34e24c8116b73509fa789, type: 2}
+    amount: 100
 --- !u!4 &579926740
 Transform:
   m_ObjectHideFlags: 0
