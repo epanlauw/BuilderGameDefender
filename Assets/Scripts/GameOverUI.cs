@@ -19,6 +19,7 @@ public class GameOverUI : MonoBehaviour
 
         transform.Find("mainMenuBtn").GetComponent<Button>().onClick.AddListener(() =>
         {
+            Time.timeScale = 1f;
             GameSceneManager.Load(GameSceneManager.Scene.MainMenuScene);
         });
 
