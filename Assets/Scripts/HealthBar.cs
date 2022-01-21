@@ -16,6 +16,13 @@ public class HealthBar : MonoBehaviour
     private void Start()
     {
         healthSystem.OnDamage += HealthSystem_OnDamage;
+        healthSystem.OnHeal += HealthSystem_OnHeal;
+        UpdateBar();
+        UpdateHealthBarVisible();
+    }
+
+    private void HealthSystem_OnHeal(object sender, System.EventArgs e)
+    {
         UpdateBar();
         UpdateHealthBarVisible();
     }
