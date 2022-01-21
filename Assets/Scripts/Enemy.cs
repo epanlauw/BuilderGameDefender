@@ -22,7 +22,10 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
-        targetTransform = BuildingManager.Instance.GetHqBuilding().transform;
+        if (BuildingManager.Instance.GetHqBuilding() != null)
+        {
+            targetTransform = BuildingManager.Instance.GetHqBuilding().transform;
+        }
         healthSystem = GetComponent<HealthSystem>();
         healthSystem.OnDied += HealthSystem_OnDied;
 
@@ -107,7 +110,10 @@ public class Enemy : MonoBehaviour
         if (targetTransform == null)
         {
             // Found no targets within range!
-            targetTransform = BuildingManager.Instance.GetHqBuilding().transform;
+            if (BuildingManager.Instance.GetHqBuilding() != null)
+            {
+                targetTransform = BuildingManager.Instance.GetHqBuilding().transform;
+            }
         }
     }
 }
