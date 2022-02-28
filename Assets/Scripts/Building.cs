@@ -48,8 +48,8 @@ public class Building : MonoBehaviour
 
     private void HealthSystem_OnDied(object sender, System.EventArgs e)
     {
-        Destroy(gameObject);
         SoundManager.Instance.PlaySound(SoundManager.Sound.BuildingDestroy);
+        Destroy(gameObject);
     }
 
     private void OnMouseEnter()
