@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6b9f9114f926c74ab541df7d02538c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootTimerMax: 0.3
+  shootTimerMax: 0.2
 --- !u!1 &4390860405028217065
 GameObject:
   m_ObjectHideFlags: 0

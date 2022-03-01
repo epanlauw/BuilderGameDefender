@@ -29,6 +29,8 @@ public class BuildingConstruction : MonoBehaviour
         spriteRenderer = transform.Find("sprite").GetComponent<SpriteRenderer>();
         buildingTypeHolder = GetComponent<BuildingTypeHolder>();
         constructionMaterial = spriteRenderer.material;
+
+        Instantiate(Resources.Load<Transform>("Particles/pfBuildingPlacedParticles"), transform.position, Quaternion.identity);
     }
 
     private void Update()
@@ -39,6 +41,7 @@ public class BuildingConstruction : MonoBehaviour
         if (constructionTimer <= 0f)
         {
             Instantiate(buildingType.prefab, transform.position, Quaternion.identity);
+            Instantiate(Resources.Load<Transform>("Particles/pfBuildingPlacedParticles"), transform.position, Quaternion.identity);
             SoundManager.Instance.PlaySound(SoundManager.Sound.BuildingPlaced);
             Destroy(gameObject);
         }
